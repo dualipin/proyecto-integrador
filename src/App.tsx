@@ -11,7 +11,7 @@ function App() {
         <NavigationJuegos />
       </header>
       <Outlet />
-      <footer className="animate__animated animate__fadeInUp mt-auto text-center text-sm py-2 bg-dark-200 rounded-t-2xl shadow-md text-color-200">
+      <footer className="animate__animated animate__fadeInUp mt-auto text-center text-xs md:text-sm py-2 bg-dark-200 rounded-t-2xl shadow-md text-color-200">
         Hecho con mucho ❤️ por Martin Sanchez -{" "}
         <a
           className="font-medium italic hover:underline"
