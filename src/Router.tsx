@@ -13,34 +13,34 @@ const reactRouter = createBrowserRouter([
           return { Component };
         },
       },
-      {
-        path: "dados",
-        async lazy() {
-          const { Component } = await import("./pages/dados/DadosJuego");
-          return { Component };
-        },
-      },
-      {
-        path: "gato",
-        async lazy() {
-          const { Component } = await import("./pages/gato/GatoJuego");
-          return { Component };
-        },
-      },
-      {
-        path: "memorama",
-        async lazy() {
-          const { Component } = await import("./pages/memorama/MemoramaJuego");
-          return { Component };
-        },
-      },
-      {
-        path: "adivina",
-        async lazy() {
-          const { Component } = await import("./pages/adivina/AdivinaJuego");
-          return { Component };
-        },
-      },
+      // {
+      //   path: "dados",
+      //   async lazy() {
+      //     const { Component } = await import("./pages/dados/DadosJuego");
+      //     return { Component };
+      //   },
+      // },
+      // {
+      //   path: "gato",
+      //   async lazy() {
+      //     const { Component } = await import("./pages/gato/GatoJuego");
+      //     return { Component };
+      //   },
+      // },
+      // {
+      //   path: "memorama",
+      //   async lazy() {
+      //     const { Component } = await import("./pages/memorama/MemoramaJuego");
+      //     return { Component };
+      //   },
+      // },
+      // {
+      //   path: "adivina",
+      //   async lazy() {
+      //     const { Component } = await import("./pages/adivina/AdivinaJuego");
+      //     return { Component };
+      //   },
+      // },
     ],
   },
 ]);
