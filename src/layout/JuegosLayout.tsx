@@ -1,6 +1,6 @@
 type JuegosLayoutProps = {
   title: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 function JuegosLayout({ children, title }: JuegosLayoutProps) {
