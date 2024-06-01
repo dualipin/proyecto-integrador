@@ -8,23 +8,38 @@ const reactRouter = createBrowserRouter([
     children: [
       {
         index: true,
-        lazy: () => import("./pages/Home"),
+        async lazy() {
+          const { Component } = await import("./pages/Home");
+          return { Component };
+        },
       },
       {
         path: "dados",
-        lazy: () => import("./pages/dados/DadosJuego"),
+        async lazy() {
+          const { Component } = await import("./pages/dados/DadosJuego");
+          return { Component };
+        },
       },
       {
         path: "gato",
-        lazy: () => import("./pages/gato/GatoJuego"),
+        async lazy() {
+          const { Component } = await import("./pages/gato/GatoJuego");
+          return { Component };
+        },
       },
       {
         path: "memorama",
-        lazy: () => import("./pages/memorama/MemoramaJuego"),
+        async lazy() {
+          const { Component } = await import("./pages/memorama/MemoramaJuego");
+          return { Component };
+        },
       },
       {
         path: "adivina",
-        lazy: () => import("./pages/adivina/AdivinaJuego"),
+        async lazy() {
+          const { Component } = await import("./pages/adivina/AdivinaJuego");
+          return { Component };
+        },
       },
     ],
   },
